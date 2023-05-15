@@ -1,0 +1,22 @@
+
+@media only screen and (min-width: 1025px)
+{
+    .mainBlockContent
+    {        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .mainBlockContent > div:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .mainBlockContent > div:nth-child(2) {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}

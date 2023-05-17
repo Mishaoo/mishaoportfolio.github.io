@@ -29,7 +29,7 @@ body
         display: grid;
         grid-template-rows: repeat(1fr);
         width: 95%;
-        height: 75em;
+        height: 130rem;
         margin: 1em auto 7em;
         background-color: var(--generalBackground);
         border-radius: 20px;
@@ -219,15 +219,10 @@ body
         }
 
 
-        @media screen and (max-width: 768px) {
-            .blockInfo span {
-                font-size: 1em; /* Змінюємо розмір шрифту для пристроїв з шириною екрану менше 768px */
-            }
-        }
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 1050px) {
             .blockInfo span {
-                font-size: 0.8em; /* Змінюємо розмір шрифту для пристроїв з шириною екрану менше 768px */
+                font-size: 1.1em; /* Змінюємо розмір шрифту для пристроїв з шириною екрану менше 768px */
             }
         }
 

@@ -22,10 +22,10 @@
     font-size: 1.5em;
     background-color: rgba(88, 203, 56, 0.231);
     border-radius: 15px;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 .mainBlockContentContact a
 {
-    font-size: 1.2em;
+    font-size: 0.7em;
 }

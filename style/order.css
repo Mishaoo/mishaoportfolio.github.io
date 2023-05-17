@@ -3,7 +3,7 @@
     transition: all .3s;
     display: grid;
     grid-template-rows: repeat(1fr);
-    width: 80%;
+    width: 90%;
     height: 80vh;
     margin: 1em auto 2em;
     border-radius: 20px;
@@ -27,5 +27,5 @@
 
 .mainBlockContentContact a
 {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }

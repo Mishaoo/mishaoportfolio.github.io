@@ -195,16 +195,18 @@ body
    
 
 
+ 
+        .blockInfo
+        {
+            position: relative;
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
 
-    .blockInfo
-    {
-        position: relative;
-        overflow: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
 
         .blockInfo span
         {
@@ -217,18 +219,17 @@ body
         }
 
 
-
-        @media only screen and (max-width: 1200px)
-        {
-            .blockInfo span
-            {                
-                font-size: 1.1em;
+        @media screen and (max-width: 768px) {
+            .blockInfo span {
+                font-size: 1em; /* Змінюємо розмір шрифту для пристроїв з шириною екрану менше 768px */
             }
         }
 
-
-
-
+        @media screen and (max-width: 450px) {
+            .blockInfo span {
+                font-size: 0.8em; /* Змінюємо розмір шрифту для пристроїв з шириною екрану менше 768px */
+            }
+        }
 
 
 

@@ -1,0 +1,226 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #282e2a;
+}
+
+body
+{
+    background-color: rgb(225, 255, 220);
+}
+
+.mainLogoBlock
+{
+    display: block;
+    width: 100%;
+    height: 20vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    position: relative;
+
+}
+
+ 
+
+
+.mainContentBlock
+{
+    transition: all .3s;
+}
+
+.mainContentBlock div
+{
+    transition: all .3s;
+}
+
+
+
+
+@media only screen and (min-width: 1025px)
+{
+    .mainContentBlock
+    {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        height: 70vh;
+        width: 75%;
+        margin: 2rem auto 0;    
+    }
+
+    .tempProduct
+    {
+        position: relative;
+        margin: 100px auto 0;
+        width: 60%;
+        height: 30vh;
+        box-shadow: -15px 15px  rgb(248, 238, 238), 15px -15px rgb(137, 137, 255);
+        background-color: rgb(28, 27, 27);
+        transition: all .3s;
+        padding: 5px;
+    }
+
+
+
+    .mainLogoBlock span
+    {
+        width: 50%;
+        position: absolute;
+        left: 30%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.3em;
+    }
+
+}
+
+
+@media only screen and (max-width: 1025px) 
+{
+    .mainContentBlock
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 70vh;
+        width: 95%;
+        margin: 2rem auto 0;    
+    }
+
+    .tempProduct
+    {
+        position: relative;
+        margin: 50px auto 50px;
+        width: 60%;
+        height: 12vh;
+        background-color: rgb(28, 27, 27);
+        transition: all .3s;
+        padding: 5px;
+        box-shadow: -5px 5px  rgb(248, 238, 238), 5px -5px rgb(137, 137, 255);
+
+    }
+
+
+
+    .mainLogoBlock span
+    {
+        width: 85%;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translate(0%, -50%);
+        font-size: 1.1em;
+    }
+
+
+
+}
+
+.tempProduct::before
+{
+    content: 'your product';
+    position: absolute;
+    color: rgb(206, 194, 194);
+    font-size: 1.7em;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transition: all .3s;
+    transform: translate(0%, -50%);
+}
+
+
+
+
+.blockProduct
+{ 
+    padding: 20px;       
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+
+
+
+
+.blockOrder
+{
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);      
+}
+
+
+    .blockInfoAboutProduct
+    {
+        display: block;
+        width: 90%;
+        margin: 40px auto 0;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    
+    .blockInfoAboutProduct span
+    {
+        display: block;
+    }
+
+    .blockInfoAboutProductNameSpan
+    {
+        margin-left: 5px;
+        font-size: 2em;
+    }
+
+    .blockInfoAboutProductDescriptionSpan
+    {
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 1.2em;
+    }
+
+
+
+
+
+
+
+        
+    .blockOrderBtn
+    {
+        display: block;
+        width: 90%; 
+        margin: 30px auto 0; 
+    }
+        .blockOrderBtn a:nth-child(1)
+        {            
+            margin-right: 20px;
+        }
+
+
+        .blockOrderBtn a
+        {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 0px;
+            font-size: 1.5em;
+            background-color: #b5e0ff;
+            border-radius: 10px;
+            width:40%;
+            text-align: center;
+            border: 4px solid #282e2a;
+        }
+
+        .blockOrderBtn a:hover
+        {
+            background-color: #bfe4fe;
+            transform: scale(1.05);
+        }
+
+

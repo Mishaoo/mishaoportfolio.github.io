@@ -1,0 +1,31 @@
+.mainBlockContentContact
+{
+    transition: all .3s;
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    width: 80%;
+    height: 80vh;
+    margin: 1em auto 2em;
+    border-radius: 20px;
+}
+
+.mainBlockContentContact div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mainBlockContentContact span
+{
+    font-size: 1.5em;
+    background-color: rgba(88, 203, 56, 0.231);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.mainBlockContentContact a
+{
+    font-size: 1.3em;
+}

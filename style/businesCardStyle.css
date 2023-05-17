@@ -1,0 +1,325 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #282e2a;
+}
+
+
+body
+{
+    background-color: rgb(222, 255, 242);
+}
+
+
+
+
+
+.blockLogo,
+.blockInfo,
+.blockBtn
+{
+    border-radius: 20px;    
+    background-color: #A9C9FF;
+    background-image: linear-gradient(260deg, #A9C9FF 0%, #c3d8fd 100%);
+
+}
+
+@media only screen and (min-width: 1025px)
+{
+    .mainBlock
+    {
+        transition: all .3s;
+        padding: 5px;
+        display: grid;
+        width: 80%;
+        height: 80vh;
+        margin: 2rem auto;
+        grid-template-columns: 1fr 1fr;        
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+        .blockLogo
+        {
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .blockInfo
+        {
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 2;
+        }
+    
+        .blockBtn
+        {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    
+    
+    .mainBlock div
+    {
+        transition: all .3s;
+    }
+    
+
+
+    .mainLogoBlock span
+    {
+        width: 50%;
+        position: absolute;
+        left: 30%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.3em;
+    }
+
+
+    .mainLogoBlock
+    {
+        display: block;
+        width: 100%;
+        height: 10vh;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        position: relative;
+    }
+
+    
+    .blockLogo,
+    .blockInfo,
+    .blockBtn
+    {    
+        margin: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 1025px) 
+{
+
+    .mainBlock
+    {
+        transition: all .3s;
+        display: grid;
+        width: 100%;
+        height: 120vh;
+        grid-template-columns: 1fr;
+    }
+    
+
+    
+
+
+    .mainLogoBlock span
+    {
+        width: 85%;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translate(0%, -50%);
+        font-size: 1em;
+    }
+
+    .mainLogoBlock
+    {
+        display: block;
+        width: 100%;
+        height: 20vh;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        position: relative;
+        transition: all .3s;    
+    }
+
+
+    
+    .blockLogo,
+    .blockInfo,
+    .blockBtn
+    {    
+        margin: 10px;
+    }
+
+
+
+    
+}
+
+
+
+
+
+
+
+  
+
+
+    @media only screen and (min-width: 1200px)/*pc*/
+    {   
+        .blockLogo
+        {            
+            transition: all .3s;
+            padding: 20px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+
+        .blockLogo span::before
+        {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 25%;
+            height: 0;
+            padding-bottom: 25%;
+            border-radius: 50%;
+            background-color: #000;
+            left: 50%;
+            bottom: -10rem;
+            transform: translate(-50%, 0%);
+            transition: all 0.2s;
+            background-color: #A9C9FF;
+            background-image: linear-gradient(260deg, #0213ff 0%, #7369ff 100%);
+        }
+    }
+
+
+    .blockLogo span
+    {
+        transition: all .3s;
+        display: block;
+        font-size: 2.2em;
+        padding: 15px;
+        margin: auto;
+        position: relative;
+        user-select: none;
+        border-radius: 15px;
+        text-align: center;
+        background-color: #A9C9FF;
+        background-image: linear-gradient(260deg, #0230ff58 0%, #5a4bff58 100%);
+    }   
+
+    @media only screen and (max-width: 1200px)/*mobile*/
+    {
+        .blockLogo
+        {
+            transition: all .3s;
+            padding: 20px;
+            display: grid;
+            grid-template-rows: 1fr;
+        }
+
+
+    }
+
+
+
+
+
+
+.blockInfo
+{
+    overflow:auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+    .blockInfo div
+    {        
+        margin: 5px;
+        padding: 0 20px;
+    }
+
+    .blockInfo div:nth-child(1)
+    {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+
+    .blockInfoLogo span
+    {       
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .blockInfoDescription
+    {
+        font-size: 1.2em;
+    }
+
+
+
+
+
+
+
+.blockBtn
+{
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    padding: 15px;
+}
+
+    .blockBtn div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    .blockBtn a:hover
+    {
+        
+        transform: scale(1.02);
+    }
+
+
+
+    @media only screen and (min-width: 1025px)
+    {
+        .blockBtn a
+        {
+            border: 6px solid rgb(81, 75, 75);
+            font-size: 2em;
+            padding: 15px 0px;
+            width: 80%;
+            text-align: center;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #afdfff 0%, #b2b5fd 100%);        
+            border-radius: 15px;
+            text-decoration: none;
+        }
+    }
+
+    @media only screen and (max-width: 1025px) 
+    {
+        .blockBtn a
+        {
+            border: 2px solid rgb(81, 75, 75);
+            font-size: 1em;
+            padding: 10px 0px;
+            width: 95%;
+            text-align: center;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #afdfff 0%, #b2b5fd 100%);        
+            border-radius: 15px;
+            text-decoration: none;
+        }
+    }

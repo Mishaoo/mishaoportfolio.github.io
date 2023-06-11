@@ -20,7 +20,7 @@
 .mainBlockContentContact span
 {
     font-size: 1.5em;
-    background-color: rgba(88, 203, 56, 0.231);
+    background-color: rgba(96, 174, 74, 0.231);
     border-radius: 15px;
     padding: 10px;
 }
@@ -28,4 +28,16 @@
 .mainBlockContentContact a
 {
     font-size: 0.7em;
+}
+
+
+.blockInfoAuthor
+{
+    position: fixed;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.13);
+    padding: 5px;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
 }

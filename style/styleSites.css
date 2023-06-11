@@ -1,89 +1,65 @@
 
 
-.mainBlockContent
+.mainBlockBtnSites
 {
-    background-color: #B3E5BE;
     transition: all .3s;
-    width: 70%;
-    box-shadow: 0 0;
-    grid-template-columns: 1fr 1fr;
-}
-
-.mainBlockContent a
-{
-    position: relative;
-    overflow: hidden;
-    margin: 100px 15px;
+    width: 65%;
+    height: 80vh;       
+    margin: 1em auto 2em;
     border-radius: 15px;
-    text-align: center;
-    background-color: #F4D03F;
-    background-image: linear-gradient(20deg, #F4D03F 0%, #16A085 100%);
-    box-shadow: 0px 2px 10px #6c8e73;
-    transition: all .1s;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.mainBlockContent a:hover
+.mainBlockBtnSites a
+{
+    transition: all .1s;
+    color: #36423a;
+    text-decoration: none;
+    display: block;
+    margin: 40px 0px;
+    font-size: 3em;
+    border: 6px solid #435348;
+    padding: 5px 50px;
+    border-radius: 15px;
+}
+
+.mainBlockBtnSites a:hover
 {
     transform: scale(1.02);
-    box-shadow: 0px 10px 10px #6c8e73;    
-
+    box-shadow: 0 10px 10px rgba(18, 90, 18, 0.217);
 }
 
 
 
-
-.mainBlockContent a span
+@media only screen and (max-width: 1050px) 
 {
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    color: rgb(40, 48, 47);
-    font-size: 2em;
-    transition: all .3s;
-    padding: 5px 30px;
-    user-select: none;
-}
-
-
-
-
-
-
-.mainBlockContent a span::before
-{
-    
-    content: ' ';
-    position: absolute;
-    width: 75%;
-    border: 7px solid #2a362e;
-    height: 115%;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: all .3s;
-}
-
-
-
-
-
-@media only screen and (max-width: 1025px) {
-    .mainBlockContent
+    .mainBlockBtnSites a
     {
-        margin: 1rem auto 0;
-        width: 80%;
-        grid-template-columns: 1fr;
-        height: 80vh;
+        font-size: 1.4em;
+        padding: 5px 20px;
+        margin: 10px 0px;
     }
 
-    .mainBlockContent a
-    {        
-        padding: 5px 30px;
-        margin: 10px;
+    .mainBlockBtnSites
+    {
+        width:  90%;
+    }
+}
+
+@media only screen and (max-width: 300px) 
+{
+    .mainBlockBtnSites a
+    {
+        font-size: 0.8em;
+        padding: 5px 20px;
+        margin: 10px 0px;
+    }
+
+    .mainBlockBtnSites
+    {
+        width:  90%;
     }
 }

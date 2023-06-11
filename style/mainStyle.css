@@ -12,6 +12,7 @@
     --generalBackgroundBtn: #22b95c86;
     --generalBackground: #83e09762;
     --textColor: #36423a;
+
 }
 
 
@@ -69,7 +70,7 @@ body
         display: inline-block;
         margin: 0px 0.3rem;
         padding: 0.2em;
-        background-color: #168a4386;
+        background-color: var(--generalBackgroundBtn);
         font-size: 1.1em;
         text-align: center;
         user-select: none;
